@@ -116,6 +116,14 @@
 
             tap-ms = <20>;
         };
+        lt_mouse: layer_tap_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_MOUSE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred"; // タップを優先する設定
+            tapping-term-ms = <200>;  // ホールドと判定する時間（ミリ秒）
+            bindings = <&mo>, <&mkp>; // 1番目にホールド時(&mo)、2番目にタップ時(&mkp)を指定
+        };
     };
 
     keymap {
