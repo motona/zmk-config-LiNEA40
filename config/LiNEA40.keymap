@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -171,10 +171,10 @@
 
         CURSOR {
             bindings = <
-&kp NUMBER_1  &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
-&trans        &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                       &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS
-&kp HOME      &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                       &kp SQT          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&trans        &trans                  &trans        &trans                   &trans  &trans    &kp ENTER  &kp PERIOD                     &kp NUMBER_0  &kp ENTER     &kp QUESTION
+&kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp N5                               &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8    &kp NUMBER_9     &kp N0
+&kp ESCAPE    &kp LG(LS(S))  &trans        &trans        &kp F10                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP_ARROW    &kp SEMICOLON    &kp EQUAL
+&kp TAB       &trans         &trans        &trans        &kp F7                               &kp SINGLE_QUOTE  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp BACKSLASH
+&kp LCTRL     &kp LEFT_WIN   &kp LEFT_ALT  &trans        &kp SPACE  &kp LEFT_SHIFT    &trans  &trans                               &trans          &trans           &kp RA(DEL)
             >;
         };
 
