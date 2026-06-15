@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,10 +147,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
             >;
         };
 
@@ -184,10 +184,10 @@
 
         FUNCTION {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &trans           &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &trans           &trans  &kp LS(LG(S))        &trans  &kp LC(LS(ESCAPE))
-&trans  &trans  &trans  &kp F11  &kp F12                    &kp LA(LC(DEL))  &trans  &trans               &trans  &kp LC(LA(INS))
-&trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans                   &trans               &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &trans           &trans  &kp LA(PRINTSCREEN)  &trans     &kp LC(LA(DELETE))
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &trans           &trans  &kp LS(LG(S))        &trans     &kp LC(LS(ESCAPE))
+&trans  &trans  &trans  &kp F11  &kp F12                    &kp LA(LC(DEL))  &trans  &trans               &trans     &kp LC(LA(INS))
+&trans  &trans  &trans  &trans   &trans   &trans    &trans  &kp K_FORWARD            &kp F5               &kp LC(W)  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -200,7 +200,7 @@
 &kp F1      &kp F2         &kp F3        &kp F4  &kp F5                                         &kp F6           &kp F7    &kp F8    &kp F9     &kp F10
 &kp ESCAPE  &kp LG(LS(S))  &trans        &trans  &kp F10                                        &trans           &kp HOME  &kp UP    &kp END    &kp F11
 &kp TAB     &trans         &trans        &trans  &kp F7                                         &kp LA(LC(DEL))  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LC(LEFT_BRACKET)
-&kp LCTRL   &kp LEFT_WIN   &kp LEFT_ALT  &trans  &kp SPACE  &kp LEFT_SHIFT    &kp C_AC_FORWARD  &kp C_AC_BACK              &trans    &kp DEL    &kp LC(RIGHT_BRACKET)
+&kp LCTRL   &kp LEFT_WIN   &kp LEFT_ALT  &trans  &kp SPACE  &kp LEFT_SHIFT    &lt_mouse 4 RCLK  &kp C_AC_BACK              &trans    &kp DEL    &kp LC(RIGHT_BRACKET)
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
